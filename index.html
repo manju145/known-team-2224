@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #navbar{
+        display: grid;
+        height: 200px;
+       border: 3px solid red;
+       } 
+       .navone{
+        display: flex;
+        justify-content: space-around;
+        border: 3px solid black;
+       }
+       .boxone{
+        display: flex;
+        width: 20%;
+        justify-content: space-evenly;
+        border: 2px solid blue;
+      
+       }
+       .boxone>div:nth-child(1){
+        font-size: 30px;
+        
+       }
+       .boxone>div{
+        margin: auto;
+       }
+       #search{
+        padding-left: 30px;
+        padding-right: 30px;
+       }
+       .navtwo{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        /* width: 70%; */
+        border: 2px solid red;
+         margin: auto;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="navone">
+            <div class="boxone">
+                <div id="asos" onclick="asos()">asos</div>
+                <div id="women" onclick="women()">WOMEN</div>
+                <div id="men" onclick="men()">MEN</div>
+            </div>
+             <input id="search" placeholder="Search For items and brands" type="text">
+             <div><img src=""/></div>
+        </div>
+        <div class="navtwo">
+           <div>Sale</div>
+           <div>New in</div>
+           <div>Clothing</div>
+           <div>Dresses</div>
+           <div>Shoes</div>
+           <div>Sportswear</div>
+           <div>Accessories</div>
+           <div>Face+Body</div>
+           <div>Brands</div>
+           <div>Outlet</div>
+           <div>Discover More</div>
+           <div>Marketplace</div>
+        </div>
+        <div class="navthree">
+           
+        </div>
+    </div>
+</body>
+
+</html>
