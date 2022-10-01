@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl page</title>
+    <style>
+        #navbar {
+            border: 0px solid red;
+        }
+
+        .navone {
+            display: flex;
+            justify-content: space-around;
+            border: 0px solid black;
+            background-color: rgb(15, 14, 14);
+        }
+
+        .boxone {
+            display: flex;
+            width: 20%;
+            justify-content: space-evenly;
+            border: 0px solid blue;
+            color: white;
+        }
+
+        .boxone>div:nth-child(1) {
+            font-size: 30px;
+
+        }
+
+        .boxone>div {
+            margin: auto;
+        }
+
+        #search {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .navtwo {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            height: 50px;
+            border: 0px solid teal;
+            background-color: rgb(56, 54, 54);
+            margin: auto;
+            color: white;
+        }
+
+        .navtwo>div {
+            margin: auto;
+        }
+
+        .navthree {
+            margin-top: -21px;
+            background-color: rgb(85, 209, 209);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="navone">
+            <div class="boxone">
+                <div id="asos" onclick="asos()">asos</div>
+                <div id="women" onclick="women()">WOMEN</div>
+                <div id="men" onclick="men()">MEN</div>
+            </div>
+            <input id="search" placeholder="Search For items and brands" type="text">
+            <div><img src="" /></div>
+        </div>
+        <div class="navtwo">
+            <div id="asos" onclick="sale()">Sale</div>
+            <div id="asos" onclick="newin()">New in</div>
+            <div id="asos" onclick="cloth()">Clothing</div>
+            <div id="asos" onclick="dress()">Dresses</div>
+            <div id="asos" onclick="shoes()">Shoes</div>
+            <div id="asos" onclick="sport()">Sportswear</div>
+            <div id="asos" onclick="access()">Accessories</div>
+            <div id="asos" onclick="face()">Face+Body</div>
+            <div id="asos" onclick="brand()">Brands</div>
+            <div id="asos" onclick="outlet()">Outlet</div>
+            <div id="asos" onclick="discover()">Discover More</div>
+            <div id="asos" onclick="market()">Marketplace</div>
+        </div>
+        <div class="navthree">
+            <div id="off" onclick="off()">
+                <h1>UP TO 50% OFF COSY GARMS</h1>
+            </div>
+            <p>Limited time only. Selected styles marked down as shown.</p>
+        </div>
+    </div>
+
+
+    <!-- All images here start -->
+
+    <div id="parent">
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-oversized-swing-grandad-blazer-in-magenta/203208418-1-magenta?$n_480w$&wid=476&fit=constrain"/>
+            <p>ASOS DESIGN oversized swing grandad blazer in magenta</p>
+            <h2>£72.00</h2>
+        </div>
+
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-tiger-printed-nipped-waist-blazer/202746017-1-multi?$n_750w$&wid=750&fit=constrain"/>
+            <p>ASOS DESIGN tiger printed nipped waist blazer</p>
+            <h2>£78.00</h2>
+        </div>
+
+         <div>
+            <img src="https://images.asos-media.com/products/asos-design-diamante-corset-detail-blazer-in-oyster/202062791-1-oyster?$n_320w$&wid=317&fit=constrain"/>
+            <p>ASOS DESIGN diamante corset detail blazer in oyster</p>
+            <h2>£88.00</h2>
+        </div> 
+        
+        <div>
+            <img src="https://images.asos-media.com/products/yas-bridal-high-waisted-wide-leg-co-ord-trouser-in-white/202084460-1-starwhite?$n_320w$&wid=317&fit=constrain"/>
+            <p>Y.A.S Bridal blazer and wide leg trouser co-ord in white</p>
+            <h2>£69.00</h2>
+        </div> 
+        
+        <div>
+            <img src="https://images.asos-media.com/products/yas-bridal-satin-blazer-co-ord-in-white/202086210-1-starwhite?$n_320w$&wid=317&fit=constrain"/>
+            <p>Y.A.S Bridal satin blazer and trouser co-ord in white</p>
+            <h2>£74.00</h2>
+        </div> 
+        
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-cropped-suit-jacket-in-washed-lime/200503106-1-washedlime?$n_320w$&wid=317&fit=constrain"/>
+            <p>ASOS DESIGN cropped suit in washed lime</p>
+            <h2>£60.00</h2>
+        </div> 
+        
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-slouchy-wide-leg-suit-trouser-in-washed-lime/200503047-1-washedlime?$n_320w$&wid=317&fit=constrain"/>
+            <p>ASOS DESIGN cropped suit in washed lime</p>
+            <h2>£38.00</h2>
+        </div>
+        
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-jersey-suit-split-sleeve-tux-blazer-in-electric-blue/202738935-1-electricblue?$n_320w$&wid=317&fit=constrain"/>
+            <p>ASOS DESIGN Mix & Match jersey suit in electric blue</p>
+            <h2>£31.50</h2>
+        </div> 
+        
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-jersey-suit-split-sleeve-tux-blazer-in-electric-blue/202738935-1-electricblue?$n_320w$&wid=317&fit=constrain"/>
+            <p>
+                ASOS DESIGN boxy oversized grandad blazer in bright pink</p>
+            <h2>£31.50</h2>
+        </div>
+        
+        <div>
+            <img src="https://images.asos-media.com/products/asos-design-boxy-oversized-grandad-blazer-in-bright-pink/203222099-1-brightpink?$n_320w$&wid=317&fit=constrain"/>
+            <p></p>
+            <h2>£42.50</h2>
+        </div> 
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div>
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> 
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div>
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> 
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> 
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> 
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> 
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div>
+        
+        <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div>  <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div> <div>
+            <img src=""/>
+            <p></p>
+            <h2></h2>
+        </div>
+    </div>
+</body>
+
+</html>
