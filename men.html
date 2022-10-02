@@ -20,11 +20,12 @@
 
         .boxone {
             display: flex;
-            width: 20%;
+            width: 70%;
             justify-content: space-evenly;
             border: 0px solid blue;
-             color: white;
+            color: white;
         }
+
 
         .boxone>div:nth-child(1) {
             font-size: 30px;
@@ -34,24 +35,23 @@
         .boxone>div {
             margin: auto;
         }
-
-        #search {
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        .navtwo{
-            display:grid;
-            grid-template-columns: repeat(12,1fr);
+        .navtwo {
+            display: flex;
+            justify-content: space-around;
             height: 50px;
-            border:0px solid teal;
+            border: 0px solid teal;
             background-color: rgb(56, 54, 54);
-            margin:auto;
-            color:white;
+            margin: auto;
+            color: white;
         }
-        .navtwo>div{
+
+        .navtwo>div {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
             margin: auto;
         }
+
         .navthree{
             margin-top: -21px;
             background-color: rgb(85, 209, 209);
@@ -129,25 +129,15 @@
                 <div id="women" onclick="women()">WOMEN</div>
                 <div id="men" onclick="men()">MEN</div>
             </div>
-            <input id="search" placeholder="Search For items and brands" type="text">
-            <div><img src="" /></div>
+           
         </div>
         <div class="navtwo">
-            <div id="asos" onclick="sale()">Sale</div>
             <div id="asos" onclick="newin()">New in</div>
             <div id="asos" onclick="cloth()">Clothing</div>
             <div id="asos" onclick="dress()">Dresses</div>
-            <div id="asos" onclick="shoes()">Shoes</div>
-            <div id="asos" onclick="sport()">Sportswear</div>
-            <div id="asos" onclick="access()">Accessories</div>
-            <div id="asos" onclick="face()">Face+Body</div>
-            <div id="asos" onclick="brand()">Brands</div>
-            <div id="asos" onclick="outlet()">Outlet</div>
-            <div id="asos" onclick="discover()">Discover More</div>
-            <div id="asos" onclick="market()">Marketplace</div>
         </div>
         <div class="navthree">
-            <div id="off" onclick="off()">
+            <div id="off" onclick="navthree()">
                 <h1>UP TO 50% OFF COSY GARMS</h1>
             </div>
             <p>Limited time only. Selected styles marked down as shown.</p>
@@ -156,28 +146,28 @@
 
     <!-- Here all images -->
     <div id="parentfirstimg">
-        <div>
+        <div onclick="first()">
             <img
                 src="https://content.asos-media.com/-/media/homepages/mw/2022/sept/26/moments/mw_warm_handle_moment_870x1110-v3.png" />
             <h2>ASOS DESIGN COPY</h2>
             <p>For fluff's sake</p>
         </div>
 
-        <div>
+        <div onclick="sec()">
             <img
                 src="https://content.asos-media.com/-/media/homepages/mw/2022/sept/26/moments/mw_global_winter_essentials_moment_870x1110.jpg" />
             <h2>WINTER NEUTRALS</h2>
             <p>Beige ain't boring</p>
         </div>
 
-        <div>
+        <div onclick="three()">
             <img
                 src="https://content.asos-media.com/-/media/homepages/mw/2022/sept/26/moments/mw_weekday_moment_870x1110.jpg" />
             <h2>WEEKDAY</h2>
             <p>Cold-weather wins</p>
         </div>
 
-        <div>
+        <div onclick="four()">
             <img
                 src="https://content.asos-media.com/-/media/homepages/mw/2022/sept/26/moments/mw_retro_day_and_night_moment_870x1110-2.jpg" />
             <h2>DICO NOSTALGIA</h2>
@@ -186,14 +176,14 @@
     </div>
 
     <div id="parentsecondimg">
-        <div>
+        <div onclick="firstsec()">
             <img
                 src="https://images.asos-media.com/products/asos-design-co-ord-oversized-joggers-in-dark-green-with-photographic-prints/200788101-1-jetset?$n_320w$&wid=317&fit=constrain" />
             <h1>Goth season is here</h1>
             <button>SHOP ASOS DESIGN</button>
         </div>
 
-        <div>
+        <div onclick="threesec()">
             <img src="https://images.asos-media.com/products/asos-design-90s-mini-oval-glasses-in-black-with-red-lens/22453139-1-black?$n_320w$&wid=317&fit=constrain"/>
             <h1>Come to the dark side</h1>
             <button>SHOP ASOS DESIGN</button>
@@ -202,12 +192,12 @@
     <h1>TRENDING BRANDS</h1>
     <!-- bottom tag here -->
     <div id="bottomtag">
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/tommy-hilfiger-hp-logos-256x256.jpg"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/north-face.png"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/carhartt-hp-logos-256x256.jpg"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/ellesse-hp-logos-256x256.jpg"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/dr-martens-hp-logos-256x256.jpg"/></div>
+        <div onclick="nike()"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/tommy-hilfiger-hp-logos-256x256.jpg"/></div>
+        <div onclick="nike()"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/north-face.png"/></div>
+        <div onclick="nike()"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/nike-hp-logos-256x256.jpg"/></div>
+        <div onclick="nike()"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/carhartt-hp-logos-256x256.jpg"/></div>
+        <div onclick="nike()"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/ellesse-hp-logos-256x256.jpg"/></div>
+        <div onclick="nike()"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/dr-martens-hp-logos-256x256.jpg"/></div>
     </div>
     <!-- here footer part -->
     <div id="footer">
@@ -239,6 +229,7 @@
 </body>
 
 <script>
+     let  LSData=JSON.parse(localStorage.getItem ("asos"));
 function asos(){
     window.location.href="index.html";   
 }
@@ -248,15 +239,40 @@ function women(){
 function men(){
     window.location.href="men.html";   
 }
-function off(){
-    window.location.href="";   
-}
-function asos(){
-    window.location.href="";   
-}
-function asos(){
-    window.location.href="";   
-}
+function  navthree() {
+        window.location.href = "boyoff.html";
+    }
+function first() {
+        window.location.href = "menpage.html";
+    }
+    function sec() {
+        window.location.href = "menpagesec.html";
+    }
+    function three() {
+        window.location.href = "menpagethree.html";
+    }
+    function four() {
+        window.location.href = "menpagesec.html";
+    }
+    function nike() {
+        window.location.href = "nike.html";
+    }
+    function  firstsec() {
+        window.location.href = "menpagesec.html";
+    }
+    function  threesec() {
+        window.location.href = "menpagethree.html";
+    }
+    
+    function newin() {
+        window.location.href = "menpagesec.html";
+    }
+    function cloth() {
+        window.location.href = "menpagethree.html";
+    }
+    function dress() {
+        window.location.href = "menpage.html";
+    }
 </script>
 
 </html>

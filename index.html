@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home page</title>
     <style>
         #navbar {
             border: 0px solid red;
@@ -20,11 +20,12 @@
 
         .boxone {
             display: flex;
-            width: 20%;
+            width: 70%;
             justify-content: space-evenly;
             border: 0px solid blue;
-             color: white;
+            color: white;
         }
+
 
         .boxone>div:nth-child(1) {
             font-size: 30px;
@@ -35,27 +36,37 @@
             margin: auto;
         }
 
-        #search {
-            padding-left: 30px;
-            padding-right: 30px;
+        #S {
+            display: flex;
+            border: 0px solid teal;
+            margin-top: 20px;
+            font-size: 18px;
         }
 
-        .navtwo{
-            display:grid;
-            grid-template-columns: repeat(12,1fr);
+        .navtwo {
+            display: flex;
+            justify-content: space-around;
             height: 50px;
-            border:0px solid teal;
+            border: 0px solid teal;
             background-color: rgb(56, 54, 54);
-            margin:auto;
-            color:white;
+            margin: auto;
+            color: white;
         }
-        .navtwo>div{
+
+        .navtwo>div {
+            display: flex;
+            justify-content: space-around;
+            width: 30%;
             margin: auto;
         }
-        .navthree{
+
+
+        .navthree {
             margin-top: -21px;
+            border: 0px solid red;
             background-color: rgb(85, 209, 209);
         }
+
         #parentfirstimg {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -67,10 +78,12 @@
         #parentfirstimg>div>img {
             width: 100%;
         }
-        #parentsecondimg>div>img{
+
+        #parentsecondimg>div>img {
             width: 90%;
         }
-        #parentsecondimg{
+
+        #parentsecondimg {
             display: grid;
             width: 70%;
             grid-template-columns: repeat(2, 1fr);
@@ -79,45 +92,52 @@
             margin: auto;
             margin-top: 30px;
         }
-        h2{
+
+        h2 {
             text-align: center;
         }
-       h1{
+
+        h1 {
             text-align: center;
         }
-        p{
+
+        p {
             text-align: center;
         }
-        #parentsecondimg button{
+
+        #parentsecondimg button {
             display: flex;
-        /* border: 3px solid blue;  */
-        margin: auto;
+            /* border: 3px solid blue;  */
+            margin: auto;
         }
-        #bottomtag{
+
+        #bottomtag {
             display: grid;
             width: 98%;
-            grid-template-columns: repeat(6,1fr);
+            grid-template-columns: repeat(6, 1fr);
             border: 0px solid red;
             gap: 20px;
             margin: auto;
             margin-top: 30px;
         }
-        #bottomtag>div>img{
+
+        #bottomtag>div>img {
             width: 100%;
         }
-        #footer{
+
+        #footer {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
+            grid-template-columns: repeat(3, 1fr);
             border: 0px solid red;
             background-color: rgb(240, 246, 246);
             margin-top: 35px;
         }
-        #footer>div{
+
+        #footer>div {
             display: grid;
             border: 0px solid red;
-            gap: 20px;  
+            gap: 20px;
         }
-       
     </style>
 </head>
 
@@ -129,24 +149,16 @@
                 <div id="women" onclick="women()">WOMEN</div>
                 <div id="men" onclick="men()">MEN</div>
             </div>
-            <input id="search" placeholder="Search For items and brands" type="text">
-            <div><img src="" /></div>
+            <div>
+                <input type="button" name="olp" id="S" class="Sig" value="Signin" onClick="Sign()">
+            </div>
         </div>
         <div class="navtwo">
-            <div id="asos" onclick="sale()">Sale</div>
             <div id="asos" onclick="newin()">New in</div>
             <div id="asos" onclick="cloth()">Clothing</div>
             <div id="asos" onclick="dress()">Dresses</div>
-            <div id="asos" onclick="shoes()">Shoes</div>
-            <div id="asos" onclick="sport()">Sportswear</div>
-            <div id="asos" onclick="access()">Accessories</div>
-            <div id="asos" onclick="face()">Face+Body</div>
-            <div id="asos" onclick="brand()">Brands</div>
-            <div id="asos" onclick="outlet()">Outlet</div>
-            <div id="asos" onclick="discover()">Discover More</div>
-            <div id="asos" onclick="market()">Marketplace</div>
         </div>
-        <div class="navthree">
+        <div class="navthree" onclick="navthree()">
             <div id="off" onclick="off()">
                 <h1>UP TO 50% OFF COSY GARMS</h1>
             </div>
@@ -186,7 +198,7 @@
     </div>
 
     <div id="parentsecondimg">
-        <div>
+        <div onclick="firstsec()">
             <img
                 src="https://images.asos-media.com/products/tommy-jeans-co-ord-college-logo-super-crop-half-zip-hoodie-in-red/201338705-1-cranberrycrush?$n_480w$&wid=476&fit=constrain" />
             <h1>TOMMY JEANS</h1>
@@ -194,8 +206,9 @@
             <button>SHOP NOW</button>
         </div>
 
-        <div>
-            <img src="https://images.asos-media.com/products/tommy-jeans-x-asos-co-ord-exclusive-splice-logo-jogger-in-multi/203103964-1-navymulti?$n_480w$&wid=476&fit=constrain"/>
+        <div onclick="threesec()">
+            <img
+                src="https://images.asos-media.com/products/tommy-jeans-x-asos-co-ord-exclusive-splice-logo-jogger-in-multi/203103964-1-navymulti?$n_480w$&wid=476&fit=constrain" />
             <h1>SERVING SPOOKY</h1>
             <p>Goth season is here</p>
             <button>SHOP HALLOWEEN</button>
@@ -204,61 +217,101 @@
     <h1>TRENDING BRANDS</h1>
     <!-- bottom tag here -->
     <div id="bottomtag">
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/never-fully-dressed-hp-logos-256x256.png"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/1x12x---test.png"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/reclaimed-vintage-hp-logos-256x256.jpg"/></div>
-        <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/collusion-hp-logos-256x256.jpg"/></div>
-    <div><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/weekday-hp-logos-256x256.jpg"/></div>
+        <div onclick="monk()"><img
+                src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/monkl-hp-logos-256x256.jpg" />
+        </div>
+        <div onclick="monk()"><img
+                src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/never-fully-dressed-hp-logos-256x256.png" />
+        </div>
+        <div onclick="monk()"><img src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/1x12x---test.png" />
+        </div>
+        <div onclick="monk()"><img
+                src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/reclaimed-vintage-hp-logos-256x256.jpg" />
+        </div>
+        <div onclick="monk()"><img
+                src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/collusion-hp-logos-256x256.jpg" />
+        </div>
+        <div onclick="monk()"><img
+                src="https://content.asos-media.com/-/media/homepages/unisex/brands-logos/256x256/weekday-hp-logos-256x256.jpg" />
+        </div>
     </div>
     <!-- here footer part -->
     <div id="footer">
-<div>
-    <h4>Help $ Informaton</h4>
-    <a href="https://www.asos.com/customer-care/">Help</a>
-    <a href="https://my.asos.com/identity/login?signin=529321b23a2864da71c7c5587098be07">Track Order</a>
-    <a href="https://www.asos.com/payments-and-deliveries/delivery/">Delivery $ Returns</a>
-  
-</div>
+        <div>
+            <h4>Help $ Informaton</h4>
+            <a href="https://www.asos.com/customer-care/">Help</a>
+            <a href="https://my.asos.com/identity/login?signin=529321b23a2864da71c7c5587098be07">Track Order</a>
+            <a href="https://www.asos.com/payments-and-deliveries/delivery/">Delivery $ Returns</a>
 
-<div>
-<H4>About ASOS</H4>
-<a href="https://www.asos.com/about/">Bout us</a>
-<a href="https://asoscareers.asos.com/">Careers at asos</a>
-<a href="https://www.asosplc.com/fashion-with-integrity/">Corporate responsibility</a>
-<a href="https://www.asosplc.com/">Invester's site</a>
-</div> 
+        </div>
 
-<div>
-    <H4>More From ASOS</H4>
-    <a href="https://www.asos.com/discover/our-apps/">Mobile and asos apps</a>
-    <a href="https://marketplace.asos.com/?ctaref=Global+footer">asos marketplace</a>
-    <a href="https://www.asos.com/gift-vouchers/?ctaref=global%20footer|gift%20vouchers">Gift voucheres</a>
-    <a href="https://www.asos.com/discover/black-friday-cyber-monday-deals/">Black Friday</a>
-    <a href="https://thrift.plus/pages/get-started-asos">ASOS x Thrift+</a>
-</div>
+        <div>
+            <H4>About ASOS</H4>
+            <a href="https://www.asos.com/about/">Bout us</a>
+            <a href="https://asoscareers.asos.com/">Careers at asos</a>
+            <a href="https://www.asosplc.com/fashion-with-integrity/">Corporate responsibility</a>
+            <a href="https://www.asosplc.com/">Invester's site</a>
+        </div>
+
+        <div>
+            <H4>More From ASOS</H4>
+            <a href="https://www.asos.com/discover/our-apps/">Mobile and asos apps</a>
+            <a href="https://marketplace.asos.com/?ctaref=Global+footer">asos marketplace</a>
+            <a href="https://www.asos.com/gift-vouchers/?ctaref=global%20footer|gift%20vouchers">Gift voucheres</a>
+            <a href="https://www.asos.com/discover/black-friday-cyber-monday-deals/">Black Friday</a>
+            <a href="https://thrift.plus/pages/get-started-asos">ASOS x Thrift+</a>
+        </div>
     </div>
 </body>
 
 <script>
-function asos(){
-    window.location.href="index.html";   
-}
-function women(){
-    window.location.href="index.html";   
-}
-function men(){
-    window.location.href="men.html";   
-}
-function off(){
-    window.location.href="";   
-}
-function first(){
-    window.location.href="girlpage.html";   
-}
-function asos(){
-    window.location.href="";   
-}
+    function asos() {
+        window.location.href = "index.html";
+    }
+    function women() {
+        window.location.href = "index.html";
+    }
+    function men() {
+        window.location.href = "men.html";
+    }
+    function navthree() {
+        window.location.href = "fiftyoff.html";
+    }
+    function first() {
+        window.location.href = "girlpage.html";
+    }
+    function sec() {
+        window.location.href = "girlpagesec.html";
+    }
+    function three() {
+        window.location.href = "girlpagethree.html";
+    }
+    function four() {
+        window.location.href = "girlpagesec.html";
+    };
+
+    function Sign() {
+        window.location.href = "login.html";
+
+    }
+    function firstsec() {
+        window.location.href = "girlpagesec.html";
+    }
+    function threesec() {
+        window.location.href = "girlpagethree.html";
+    }
+    function monk() {
+        window.location.href = "monkigirl.html";
+    }
+    function newin() {
+        window.location.href = "dress.html";
+    }
+    function cloth() {
+        window.location.href = "clothing.html";
+    }
+    function dress() {
+        window.location.href = "girlpagesec.html";
+    }
 </script>
 
 </html>
